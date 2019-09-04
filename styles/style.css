@@ -1,0 +1,83 @@
+@import url('https://fonts.googleapis.com/css?family=Roboto&display=swap');
+@font-face {
+    font-family: LCD;
+    src: url(../fonts/digital-7.ttf);
+}
+
+body, html {
+    padding: 0;
+    margin: 0;
+    height: 100vh;
+    font-family: 'Roboto', sans-serif;
+    background: radial-gradient(#ccc, #333);
+    background-position: cover; /* Center the image */ 
+    background-repeat: no-repeat;
+}
+
+#calculator {
+    width: 310px;
+    height: 505px;
+    background-color: #272727;
+    background-size: cover;
+    background-position: center; 
+    border-radius: 15%;
+	box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.8), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    margin: 0px auto;
+    position: relative;
+    top: 60px;
+    border-radius: 5px;
+    padding-bottom: 10px;
+}
+
+#result { height: 140px;}
+
+#result p {
+    margin: 0;
+    font-family: LCD;
+}
+
+#history-value {
+    color: rgb(58, 58, 58);
+    font-size: 3rem;
+}
+#output-value {
+    font-size: 4rem;
+}
+
+.result__container {
+    background-color: rgb(118, 178, 27);
+    border: 2px solid rgb(32, 130, 10);
+    height: 120px;
+    border-radius: 5px;
+    position: relative;
+    top: 10px;
+    margin: 10px;
+}
+
+.keyboard {
+    height: 355px;
+    padding: 10px 10px 0px 10px;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-gap: 12px;
+}
+
+.keyboard button {
+    background: rgb(55, 55, 55);
+    box-shadow: 2px 2px rgb(20, 20, 20);
+    cursor: pointer;
+    border-radius: 10%;
+    border: none;
+    font-size: 1.1rem;
+    font-weight: 800;
+    color: #fff;
+}
+.keyboard button:active, .active {
+    transform: translateY(2px);
+}
+
+button:focus {outline:0;}
+
+.zero { grid-column: 2;}
+.equals { grid-column: 4;}
+
